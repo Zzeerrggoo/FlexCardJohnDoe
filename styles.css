@@ -22,3 +22,13 @@ body{
     background: dodgerblue;
 }
 
+
+.card{
+    min-width: 320px;
+    max-width: 400px;
+    width:100%;
+    text-align: center;
+
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
