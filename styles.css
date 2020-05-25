@@ -23,16 +23,62 @@ body{
 }
 
 
-
 .card{
+    --image-size: 200px;
+    --border-size: 10px;
+
+    display: inline-block;
     min-width: 320px;
     max-width: 400px;
     width:100%;
     text-align: center;
 
-    background-color: white;
-    font-family: Arial, sans-serif;
+    border-radius: 7px;
+    background-color: #FEFEFE;
+    font-family: Roboto, sans-serif;
 }
+
+
+.imageWrapper{
+
+    overflow: hidden;
+    width: var(--image-size);
+    height: var(--image-size);
+    border: var(--border-size) solid #EFEFEF;
+    border-radius: 50%;
+}
+
+.imageWrapper img{
+    width: calc(var(--image-size) - 2*var(--border-size));
+    height: calc(var(--image-size) - 2*var(--border-size));
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+article header{
+    display: inline-block;
+    position: relative;
+    margin: 2.5em;
+}
+
+article header::before{
+    content: '';
+    width: calc(var(--image-size) * 0.2 - 10px);
+    height: calc(var(--image-size) * 0.2 - 10px);
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 999;
+    bottom: 0.1em;
+    right: 2em;
+    background-image: url("Flag_of_Ukraine.svg");
+    background-size:  cover;
+    background-position: center;
+    border: 5px solid gray/*#FEFEFE*/;
+}
+
+
+
 
 .card h1{
     font-size: 35px;
