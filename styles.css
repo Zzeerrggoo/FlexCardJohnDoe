@@ -23,6 +23,7 @@ body{
 }
 
 
+
 .card{
     min-width: 320px;
     max-width: 400px;
@@ -31,4 +32,18 @@ body{
 
     background-color: white;
     font-family: Arial, sans-serif;
+}
+
+.card h1{
+    font-size: 35px;
+    color: #fe5129;
+}
+
+.card h2{
+    font-size: 23px;
+}
+
+.card p{
+    font-size: 20px;
+    color: #1d1d1d;
 }
