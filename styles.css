@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 
 body{
-    background: dodgerblue;
+    background: #B9DEE6;
 }
 
 
@@ -27,12 +27,16 @@ body{
     --image-size: 200px;
     --border-size: 10px;
 
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
     min-width: 320px;
     max-width: 400px;
     width:100%;
     text-align: center;
 
+    box-shadow: 0 0 8px 5px rgba(219,210,219,1);
     border-radius: 7px;
     background-color: #FEFEFE;
     font-family: Roboto, sans-serif;
@@ -56,25 +60,27 @@ body{
 }
 
 article header{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     position: relative;
     margin: 2.5em;
 }
 
 article header::before{
     content: '';
-    width: calc(var(--image-size) * 0.2 - 10px);
-    height: calc(var(--image-size) * 0.2 - 10px);
+    width: calc(var(--image-size) * 0.2 - 12px);
+    height: calc(var(--image-size) * 0.2 - 12px);
     border-radius: 50%;
 
     position: absolute;
     z-index: 999;
     bottom: 0.1em;
-    right: 2em;
+    right: 5.5em;
     background-image: url("Flag_of_Ukraine.svg");
     background-size:  cover;
     background-position: center;
-    border: 5px solid gray/*#FEFEFE*/;
+    border: 6px solid #FEFEFE;
+    box-shadow: 0 0 3px 2px rgba(219,210,219,0.5);
 }
 
 
@@ -92,16 +98,18 @@ article header::before{
     line-height: 1.5em;
     font-size: 20px;
     color: #1d1d1d;
-
     margin: 0 1.5em;
+
+    flex: 1 1 auto;
 }
+
 
 footer{
     margin: 2em 0;
     display: flex;
     justify-content: space-evenly;
-}
 
+}
 
 footer> svg{
     width:30px;
@@ -109,7 +117,11 @@ footer> svg{
 }
 
 
-
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 
 
