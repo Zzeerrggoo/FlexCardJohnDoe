@@ -87,9 +87,13 @@ article header::before{
 
 .card h2{
     font-size: 23px;
+    margin-bottom: 2em;
 }
 
 .card p{
+    line-height: 1.5em;
     font-size: 20px;
     color: #1d1d1d;
+
+    margin: 0 1.5em;
 }
