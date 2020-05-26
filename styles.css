@@ -78,8 +78,6 @@ article header::before{
 }
 
 
-
-
 .card h1{
     font-size: 35px;
     color: #fe5129;
@@ -97,3 +95,31 @@ article header::before{
 
     margin: 0 1.5em;
 }
+
+footer{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer> svg{
+    width:30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
