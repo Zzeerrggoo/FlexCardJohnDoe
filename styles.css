@@ -86,11 +86,12 @@ article header::before{
 .card h1{
     font-size: 35px;
     color: #fe5129;
+    margin-bottom: 0.2em;
 }
 
 .card h2{
-    font-size: 23px;
-    margin-bottom: 2em;
+    font-size: 22px;
+    margin-bottom: 1.8em;
 }
 
 .card p{
