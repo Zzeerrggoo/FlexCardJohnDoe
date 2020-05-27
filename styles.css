@@ -27,6 +27,10 @@ body{
     --image-size: 200px;
     --border-size: 10px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     min-width: 320px;
     max-width: 400px;
     width:100%;
@@ -39,7 +43,6 @@ body{
 }
 
 article header{
-    display: inline-block;
     position: relative;
     margin: 2.5em;
 }
@@ -94,17 +97,18 @@ article header::before{
     line-height: 1.5em;
     font-size: 20px;
     color: #1d1d1d;
-    margin: 0 1.5em;
-
-    flex: 1 1 auto;
+    margin: 0 1.5em 2em;
 }
 
 
 footer{
-    margin: 2em 0;
-    display: flex;
-    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: 2em;
 
+    display: flex;
+    align-self: stretch;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
 }
 
 footer> svg{
