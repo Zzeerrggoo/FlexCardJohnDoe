@@ -30,39 +30,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
+
 
     min-width: 320px;
     max-width: 400px;
     width:100%;
+
+    font-family: Roboto, sans-serif;
     text-align: center;
 
     box-shadow: 0 0 8px 5px rgba(219,210,219,1);
     border-radius: 7px;
     background-color: #FEFEFE;
-    font-family: Roboto, sans-serif;
 }
 
 article header{
     position: relative;
     margin: 2.5em;
-}
-
-.imageWrapper{
-
-    overflow: hidden;
-    width: var(--image-size);
-    height: var(--image-size);
-    border: var(--border-size) solid #EFEFEF;
-    border-radius: 50%;
-
-    position: relative;
-}
-
-.imageWrapper img{
-    width: calc(var(--image-size) - 2*var(--border-size));
-    height: calc(var(--image-size) - 2*var(--border-size));
-    object-fit: cover;
-    object-position: 50% 50%;
 }
 
 article header::before{
@@ -75,11 +60,26 @@ article header::before{
     z-index: 999;
     bottom: 0.1em;
     right: 2em;
-    background-image: url("Flag_of_Ukraine.svg");
+    background-image: url("./images/Flag_of_Ukraine.svg");
     background-size:  cover;
     background-position: center;
     border: 6px solid #FEFEFE;
     box-shadow: 0 0 3px 2px rgba(219,210,219,0.5);
+}
+
+.imageWrapper{
+    overflow: hidden;
+    width: var(--image-size);
+    height: var(--image-size);
+    border: var(--border-size) solid #EFEFEF;
+    border-radius: 50%;
+}
+
+.imageWrapper img{
+    width: calc(var(--image-size) - 2*var(--border-size));
+    height: calc(var(--image-size) - 2*var(--border-size));
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 
@@ -104,10 +104,9 @@ article header::before{
 footer{
     margin-top: auto;
     margin-bottom: 2em;
+    align-self: stretch;
 
     display: flex;
-    align-self: stretch;
-    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
@@ -115,7 +114,6 @@ footer> svg{
     width:30px;
     height: 30px;
 }
-
 
 section{
     display: flex;
