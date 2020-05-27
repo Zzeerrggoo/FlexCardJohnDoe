@@ -27,10 +27,6 @@ body{
     --image-size: 200px;
     --border-size: 10px;
 
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-
     min-width: 320px;
     max-width: 400px;
     width:100%;
@@ -42,6 +38,11 @@ body{
     font-family: Roboto, sans-serif;
 }
 
+article header{
+    display: inline-block;
+    position: relative;
+    margin: 2.5em;
+}
 
 .imageWrapper{
 
@@ -50,6 +51,8 @@ body{
     height: var(--image-size);
     border: var(--border-size) solid #EFEFEF;
     border-radius: 50%;
+
+    position: relative;
 }
 
 .imageWrapper img{
@@ -57,13 +60,6 @@ body{
     height: calc(var(--image-size) - 2*var(--border-size));
     object-fit: cover;
     object-position: 50% 50%;
-}
-
-article header{
-    display: inline-flex;
-    justify-content: center;
-    position: relative;
-    margin: 2.5em;
 }
 
 article header::before{
@@ -75,7 +71,7 @@ article header::before{
     position: absolute;
     z-index: 999;
     bottom: 0.1em;
-    right: 5.5em;
+    right: 2em;
     background-image: url("Flag_of_Ukraine.svg");
     background-size:  cover;
     background-position: center;
